@@ -1,0 +1,4 @@
+.row-fluid
+  - @focus_areas.each do |focus|
+    = link_to focus.name, focus_area_path(focus), class: "btn btn-large btn-primary"
+

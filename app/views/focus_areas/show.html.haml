@@ -1,0 +1,6 @@
+= form_for @focus_area do |f|
+  - @problem_areas.each do |pa|
+    %p
+      = radio_button_tag 'problem', pa.name
+      = pa.name
+  
